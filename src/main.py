@@ -83,3 +83,11 @@ def init_weaviate():
 
 
 app = Flask(__name__)
+
+def start():
+    API_PORT_STR = os.environ.get("API_PORT", default=None)
+    API_PORT = int(API_PORT_STR) if API_PORT_STR is not None else None
+    app.run(port=API_PORT)
+
+if __name__ == "__main__":
+    start()
