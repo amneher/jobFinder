@@ -32,5 +32,9 @@
 **/obj
 **/secrets.dev.yaml
 **/values.dev.yaml
+.ve/*
+.vscode/*
+.ipynb_checkpoints/*
+.env
 LICENSE
 README.md
