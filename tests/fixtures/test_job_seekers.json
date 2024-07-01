@@ -1,0 +1,32 @@
+{
+    "test_job_seeker_1": {
+        "telephone": "6603214567",
+        "profile": "",
+        "skill_ids": "",
+        "resume_id": ""
+    },
+    "test_job_seeker_2": {
+        "telephone": "5734321789",
+        "profile": "",
+        "skill_ids": "",
+        "resume_id": ""
+    },
+    "test_job_seeker_3": {
+        "telephone": "4048022113",
+        "profile": "",
+        "skill_ids": "",
+        "resume_id": ""
+    },
+    "test_job_seeker_4": {
+        "telephone": "3126752345",
+        "profile": "",
+        "skill_ids": "",
+        "resume_id": ""
+    },
+    "test_job_seeker_5": {
+        "telephone": "7732341234",
+        "profile": "",
+        "skill_ids": "",
+        "resume_id": ""
+    }
+}

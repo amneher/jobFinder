@@ -1,0 +1,32 @@
+{
+    "test_profile_1": {
+        "user_id": "",
+        "interests": ["Gardening", "Watercolor"],
+        "co_size_preference": ["Startup", "Small", "Medium"],
+        "preferred_industries": ["Education", "Hospitality"]
+    },
+    "test_profile_2": {
+        "user_id": "",
+        "interests": ["Macrame", "Baking"],
+        "co_size_preference": ["Medium", "Large"],
+        "preferred_industries": ["Energy", "Finance"]
+    },
+    "test_profile_3": {
+        "user_id": "",
+        "interests": ["Hot Air Ballooning", "Stamp Collecting"],
+        "co_size_preference": ["Startup", "Mega"],
+        "preferred_industries": ["Medicine", "Transportation"]
+    },
+    "test_profile_4": {
+        "user_id": "",
+        "interests": ["Running", "Napping"],
+        "co_size_preference": ["Medium", "Small"],
+        "preferred_industries": ["Technology", "Retail"]
+    },
+    "test_profile_5": {
+        "user_id": "",
+        "interests": ["Baseball", "Taxidermy"],
+        "co_size_preference": ["Startup", "Mega"],
+        "preferred_industries": ["Travel", "Government"]
+    }
+}

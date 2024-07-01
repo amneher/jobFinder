@@ -47,6 +47,66 @@ class Profile(Base):
         self.co_size_preference = ", ".join(co_size_preference)
         self.preferred_industries = ", ".join(preferred_industries)
 
+    # get, add, remove, x in interests
+    def get_interests(self) -> list[str]:
+        interests = self.interests.split(", ")
+        return sorted(interests)
+    
+    def add_interest(self, interest: str) -> list[str]:
+        interests = self.interests.split(", ")
+        interests.append("".join(interest.lower().strip().split(" ")))
+        return sorted(interests)
+    
+    def remove_interest(self, interest: str) -> bool:
+        old_interests = [i.lower().strip() for i in self.interests.split(", ")]
+        new_interests = [i for i in old_interests if i != interest]
+        self.interests = ", ".join(new_interests)
+        return interest not in self.interests.split(", ")
+    
+    def has_interest(self, interest: str) -> bool:
+        return interest in self.interests.split(", ")
+
+    # get, add, remove, x in co_size_pref
+    def get_co_size_preference(self) -> list[str]:
+        co_size_preference = self.co_size_preference.split(", ")
+        return sorted(co_size_preference)
+    
+    def add_co_size_preference(self, co_size_preference: str) -> list[str]:
+        co_size_preferences = self.co_size_preference.split(", ")
+        co_size_preferences.append("".join(co_size_preference.lower().strip().split(" ")))
+        return sorted(co_size_preferences)
+    
+    def remove_co_size_preference(self, co_size_preference: str) -> bool:
+        old_co_size_preferences = [i.lower().strip() for i in self.co_size_preference.split(", ")]
+        new_co_size_preferences = [i for i in old_co_size_preferences if i != co_size_preference]
+        self.co_size_preference = ", ".join(new_co_size_preferences)
+        return co_size_preference not in self.co_size_preference.split(", ")
+    
+    def has_co_size_preference(self, co_size_preference: str) -> bool:
+        return co_size_preference in self.co_size_preference.split(", ")
+
+    # get, add, remove, x in pref_industries
+    def get_preferred_industries(self) -> list[str]:
+        preferred_industries = self.preferred_industries.split(", ")
+        return sorted(preferred_industries)
+    
+    def add_preferred_industries(self, preferred_industry: str) -> list[str]:
+        preferred_industries = self.preferred_industries.split(", ")
+        preferred_industries.append("".join(preferred_industry.lower().strip().split(" ")))
+        return sorted(preferred_industries)
+    
+    def remove_preferred_industries(self, preferred_industry: str) -> bool:
+        old_preferred_industries = [i.lower().strip() for i in self.preferred_industries.split(", ")]
+        new_preferred_industries = [i for i in old_preferred_industries if i != preferred_industry]
+        self.preferred_industries = ", ".join(new_preferred_industries)
+        return preferred_industry not in self.preferred_industries.split(", ")
+    
+    def has_preferred_industry(self, preferred_industry: str) -> bool:
+        return preferred_industry in self.preferred_industries.split(", ")
+
+    # get, add, remove, x in ...
+
+
 
 class Skill(Base):
     __tablename__ = "skills"

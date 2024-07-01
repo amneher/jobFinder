@@ -1,0 +1,43 @@
+{
+    "test_user_1": {
+        "username": "gaddams",
+        "email": "gomez@addams.net",
+        "first_name": "Gomez",
+        "last_name": "Addams",
+        "birthday": "1960-10-31",
+        "is_verified": true
+    },
+    "test_user_2": {
+        "username": "maddams",
+        "email": "morticia@addams.net",
+        "first_name": "Morticia",
+        "last_name": "Addams",
+        "birthday": "1963-04-13",
+        "is_verified": true
+    },
+    "test_user_3": {
+        "username": "waddams",
+        "email": "wednesday@addams.net",
+        "first_name": "Wednesday",
+        "last_name": "Addams",
+        "birthday": "1993-05-17",
+        "is_admin": true,
+        "is_verified": true
+    },
+    "test_user_4": {
+        "username": "paddams",
+        "email": "pugsley@addams.net",
+        "first_name": "Pugsley",
+        "last_name": "Addams",
+        "birthday": "1995-01-10",
+        "is_verified": true
+    },
+    "test_user_5": {
+        "username": "iaddams",
+        "email": "itt@addams.net",
+        "first_name": "Itt",
+        "last_name": "Addams",
+        "birthday": "1930-08-03",
+        "is_verified": true
+    }
+}
